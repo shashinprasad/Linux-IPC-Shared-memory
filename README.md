@@ -21,8 +21,9 @@ Execute the C Program for the desired output.
 # PROGRAM:
 
 ## Write a C program that illustrates two processes communicating using shared memory.
-### shm.c
 ```
+//shmry1.c
+
 #include<unistd.h> 
 #include<stdlib.h> 
 #include<stdio.h> 
@@ -76,10 +77,10 @@ fprintf(stderr, "failed to delete\n");
 exit(EXIT_FAILURE);
 } exit(EXIT_SUCCESS);
 }
+```
+```
+//shmry2.c
 
-```
-### shm1.c
-```
 #include<unistd.h> 
 #include<stdlib.h> 
 #include<stdio.h> 
@@ -126,8 +127,11 @@ fprintf(stderr, "shmdt failed\n"); exit(EXIT_FAILURE);
 } exit(EXIT_SUCCESS);
 }
 ```
-# OUTPUT
-![alt text](<output/Screenshot from 2024-11-11 08-20-39.png>)
-![alt text](<output/Screenshot from 2024-11-11 08-20-18.png>)
+## OUTPUT :
+![image](https://github.com/user-attachments/assets/ceb611ff-5551-4afd-9cbf-3c827b1a5448)
+
+![image](https://github.com/user-attachments/assets/49c581a8-9da8-41c8-b55e-65d24f872d79)
+
+
 # RESULT:
 The program is executed successfully.
